@@ -133,14 +133,8 @@ a.item:focus .icon-smartphone {
 }
 
  .icon {
-    width: 16px;
     margin-right: 10px;
  }
-
-.icon-smartphone {
-    width: 10px;
-    margin-right: 10px;
-}
 
 .address a {
     display: flex;
@@ -308,6 +302,13 @@ a.item:focus .icon-smartphone {
     display: flex;
 }
 
+.team-shadow {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team.list > li + li {
     width: 270px;
     margin-left: 30px
@@ -353,15 +354,38 @@ a.item:focus .icon-smartphone {
 
 .section-team  ul {
     padding: 0;
-
 }
 
 .nav-icons {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    padding-right: 32px;
-    padding-left: 32px;
+    margin-top: 16px;
+}
+
+.nav-a:hover,
+.nav-a:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.nav-a:hover,
+.nav-a:focus {
+    fill: #ffffff;
+}
+
+.nav-a {
+    fill: #afb1b8;
+}
+
+.nav-icons li + li {
+    margin-left: 10px;
+}
+.nav-icons a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-li {
@@ -369,6 +393,41 @@ a.item:focus .icon-smartphone {
 }
 
 /* clients */
+
+.clients-items {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.clients-items li + li {
+    margin-left: 30px;
+}
+
+.clients-items a {
+
+    fill: #afb1b8;
+}
+
+.clients-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    
+
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.clients-company:hover,
+.clients-company:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
 
 .clients {
     padding-top: 94px;
@@ -434,6 +493,55 @@ a.item:focus .icon-smartphone {
     margin-bottom: 9px;
 }
 
+.socials-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px
+}
+
+.socials-footer > b {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.social-logotip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-logotip:hover,
+.social-logotip:focus {
+    background-color: var(--accent-color);
+}
+
+.socials-footer ul {
+    display: flex;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.socials-icon {
+    margin: 0;
+    padding: 0;
+}
+
+.socials-icon li + li {
+    margin-left: 10px;
+}
+
 /* portfolio */
 
 .main {
@@ -445,25 +553,6 @@ a.item:focus .icon-smartphone {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
-.btn.one {
-    width: 73px;
-}
-
-.btn.two {
-    width: 128px;
-}
-
-.btn.tree {
-    width: 145px;
-}
-
-.btn.four {
-    width: 103px;
-}
-
-.btn.fife {
-    width: 130px;
 }
 
 .box button {
@@ -480,11 +569,15 @@ a.item:focus .icon-smartphone {
 .btn:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn {
     color: var(--title-text-color);
     background-color: #F5F4FA;
+    padding: 6px 22px ;
 
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -498,6 +591,13 @@ a.item:focus .icon-smartphone {
 .portfolio.list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.element:hover,
+.element:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .element {
