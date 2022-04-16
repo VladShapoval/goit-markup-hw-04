@@ -107,15 +107,18 @@ body {
     color: var(--accent-color)
 }
 
-.address .item:hover .icon {
+.address .item:hover .icon,
+.address .item:focus .icon {
     fill: currentColor;
 }
 
-a.item:hover .icon-smartphone {
+a.item:hover .icon-smartphone,
+a.item:focus .icon-smartphone {
     fill: currentColor;
 }
 
 .address .item {
+    align-items: center;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -348,7 +351,7 @@ a.item:hover .icon-smartphone {
     text-align: center;
 }
 
-.section-team ul {
+.section-team  ul {
     padding: 0;
 
 }
@@ -356,13 +359,15 @@ a.item:hover .icon-smartphone {
 .nav-icons {
     display: flex;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    margin-top: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
-.nav-icons li+li {
-    margin-left: 10px;
+
+.nav-li {
+    list-style: none;
 }
- 
+
 /* clients */
 
 .clients {
