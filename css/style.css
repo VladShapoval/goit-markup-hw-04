@@ -118,6 +118,7 @@ a.item:focus .icon-smartphone {
 }
 
 .address .item {
+    fill: #757575;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
